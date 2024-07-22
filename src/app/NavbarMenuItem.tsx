@@ -5,9 +5,9 @@ type NavMenuItemProps = {
   children: React.ReactNode;
 };
 
-export default function NavMenuItem({ href, children }: NavMenuItemProps) {
+export default function MenuItem({ href, children }: NavMenuItemProps) {
   return (
-    <li className="bg-slate-400 p-3 mx-1 rounded-sm hover:bg-sky-700">
+    <li className="text-sm p-3  mx-1 rounded-sm hover:bg-complementary-color">
       <Link href={href}>{children}</Link>
     </li>
   );
