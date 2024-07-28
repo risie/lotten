@@ -2,10 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 :root {
-  --main-bg-color: #f7f7f7;
-  --complemnt-color: #7da2a9;
+  --main-bg-color: #eae0cc;
+  --complemnt-color: #c9ada1;
+  --sage: #798478;
+  --grey: #a0a083;
+}
+header {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 body {
+  background-image: url("/background.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+img {
+  border-radius: 20%;
+  padding: 1rem;
+}
+
+section {
+  margin: 3rem;
+}
+article,
+figure {
   background-color: var(--main-bg-color);
+}
+
+h1 {
+  font-size: 9rem;
+}
+p {
+  font-size: 0.8rem;
 }
