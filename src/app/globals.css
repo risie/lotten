@@ -14,15 +14,8 @@ header {
   align-items: center;
 }
 
-img {
-  border-radius: 4rem;
-  padding: 1rem;
-}
-
-section {
-  margin: 3rem;
-  background-color: var(--sage);
-  border-radius: 2rem;
+article {
+  margin: 1rem;
 }
 
 h1 {
