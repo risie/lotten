@@ -36,17 +36,13 @@ export default function Home() {
           </h3>
         </article>
         <figure className="md:w-1/2">
-          <div className="relative h-0" style={{ paddingBottom: "100%" }}>
-            <Image src="/staket.jpg" alt="" layout="fill" objectFit="cover" />
-          </div>
+          <Image src="/staket.jpg" alt="" width={500} height={500} />
         </figure>
       </section>
 
       <section className="flex flex-col md:flex-row">
-        <figure className="md:w-1/2">
-          <div className="relative h-0" style={{ paddingBottom: "100%" }}>
-            <Image src="/bage.jpg" alt="" layout="fill" objectFit="cover" />
-          </div>
+        <figure>
+          <Image src="/bage.jpg" alt="" height={400} width={400} />
         </figure>
         <article className="md:w-1/2 p-5">
           <h2 className="text-xl">Välkommen Till Holmängens Koloniförening!</h2>

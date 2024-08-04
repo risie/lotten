@@ -14,28 +14,21 @@ header {
   align-items: center;
 }
 
-body {
-  background-image: url("/background.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 img {
-  border-radius: 20%;
+  border-radius: 4rem;
   padding: 1rem;
 }
 
 section {
   margin: 3rem;
-}
-article,
-figure {
-  background-color: var(--main-bg-color);
+  background-color: var(--sage);
+  border-radius: 2rem;
 }
 
 h1 {
   font-size: 9rem;
 }
+
 p {
   font-size: 0.8rem;
 }

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Montserrat, Bevan, Anton } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 
