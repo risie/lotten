@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
+import Footer from "./Footer";
 
 const montserrat = Montserrat({ weight: "300", subsets: ["latin"] });
 
@@ -16,12 +18,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${montserrat.className}`}>
-        <header className={`${montserrat.className}`}>
-          <h1 className="text-lg">Holmängens Koloniförening</h1>
+    <html data-theme="light" lang="en">
+      <body>
+        <header>
+          <div className="navbar bg-base-100">
+            <Link href={"/"} className="btn btn-ghost text-lg text-wrap">
+              Holmängens Koloniförening
+            </Link>
+          </div>
         </header>
         {children}
+        <Footer />
       </body>
     </html>
   );

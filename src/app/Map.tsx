@@ -1,11 +1,11 @@
 "use client";
 import { GoogleMap } from "@react-google-maps/api";
+import { MapProvider } from "./MapProvider";
 
 const defaultMapContainerStyle = {
-  width: "80vw",
-  height: "50vh",
-  borderRadius: "15px",
-  margin: "1rem",
+  minWidth: "300px",
+  minHeight: "200px",
+  borderRadius: "0.5rem",
 };
 
 const defaultMapCenter = {
@@ -24,13 +24,15 @@ const defaultMapOptions = {
 
 export default function Map() {
   return (
-    <div className="w-full flex justify-center">
-      <GoogleMap
-        mapContainerStyle={defaultMapContainerStyle}
-        center={defaultMapCenter}
-        zoom={defaultMapZoom}
-        options={defaultMapOptions}
-      ></GoogleMap>
-    </div>
+    <figure className="w-full flex justify-center">
+      <MapProvider>
+        <GoogleMap
+          mapContainerStyle={defaultMapContainerStyle}
+          center={defaultMapCenter}
+          zoom={defaultMapZoom}
+          options={defaultMapOptions}
+        ></GoogleMap>
+      </MapProvider>
+    </figure>
   );
 }
