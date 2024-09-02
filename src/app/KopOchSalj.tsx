@@ -2,6 +2,7 @@ export default function KopOchSalj() {
   return (
     <section>
       <article className="prose m-10">
+        <h3>Köpa kolonilott</h3>
         <p>
           För att kunna köpa kolonistuga på Holmängen måste du vara myndig,
           folkbokförd inom Vänersborgs kommun och inte ha arrende eller
@@ -14,6 +15,7 @@ export default function KopOchSalj() {
           från förre ägaren. När du fått medlemskap betalar du en
           inträdesavgift.
         </p>
+        <h3>Avgifter</h3>
         <p>
           Arrendeavgift och andra avgifter som årsmötet beslutar om, faktureras
           en gång per år. Du är som medlem och innehavare av kolonilott, skyldig
@@ -21,6 +23,7 @@ export default function KopOchSalj() {
           Du deltar om möjligt i de arbetsdagar, som är gemensamma för
           föreningens medlemmar.
         </p>
+        <h3>Sälja</h3>
         <p>
           Stugorna säljs exempelvis via mäklare eller annons, men ibland sätter
           säljaren upp en lapp på föreningens anslagstavla. Om du undrar över

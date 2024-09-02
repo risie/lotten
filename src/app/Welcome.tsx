@@ -8,6 +8,7 @@ export default function Welcome() {
           Vänersborgs Stadsfullmäktige beslutade redan 1931 att arrendera ut
           marken för koloniändamål.
         </p>
+        <h3>Historia</h3>
         <p>
           Motivet var detsamma som i många andra städer i Sverige. Nämligen att
           koloniträdgårdsverksamhet är av stor social betydelse och för
