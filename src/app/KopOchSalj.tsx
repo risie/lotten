@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function KopOchSalj() {
   return (
     <section>
@@ -27,8 +29,9 @@ export default function KopOchSalj() {
         <p>
           Stugorna säljs exempelvis via mäklare eller annons, men ibland sätter
           säljaren upp en lapp på föreningens anslagstavla. Om du undrar över
-          något, skickar du ett mejl till styrelsen på ------ . Vi återkopplar
-          till dig så snart som möjligt.
+          något, skickar du ett mejl till styrelsen vi vårt
+          <Link href="/kontakt"> kontaktformulär</Link>. Vi återkopplar till dig
+          så snart som möjligt.
         </p>
       </article>
     </section>

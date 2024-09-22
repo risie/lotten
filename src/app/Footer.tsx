@@ -10,8 +10,8 @@ export default function Footer() {
         >
           Hitta hit
         </Link>
-        <Link href="" className="link link-hover">
-          Mail
+        <Link href="/kontakt" className="link link-hover">
+          Kontakt
         </Link>
         <h6 className="footer-title">Användbara Länkar</h6>
         <Link href="https://vanersborg.se/" className="link link-hover">
