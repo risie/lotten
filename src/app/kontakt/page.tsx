@@ -1,10 +1,10 @@
 import ContactForm from "../ContactForm";
 
-export default function Home() {
+export default function Kontakt() {
   return (
-    <div className="flex flex-col max-w-xl mx-auto p-3">
+    <section className="flex flex-col max-w-xl mx-auto p-3 prose">
       <h1 className="text-2xl font-bold mb-4">Kontakta Oss</h1>
       <ContactForm />
-    </div>
+    </section>
   );
 }

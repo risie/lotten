@@ -1,7 +1,7 @@
-export default function Page() {
+export default function Bilder() {
   return (
     <>
-      <h2>Bilder</h2>
+      <h2>Bilder - Kommer snart</h2>
     </>
   );
 }
