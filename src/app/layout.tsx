@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html data-theme="light" lang="en">
-      <body>
+      <body className="flex flex-col min-h-screen">
         <header>
           <div className="navbar bg-base-100">
             <Link href={"/"} className="btn btn-ghost text-lg text-wrap">
@@ -27,7 +27,7 @@ export default function RootLayout({
             </Link>
           </div>
         </header>
-        {children}
+        <main className="flex-grow">{children}</main>
         <Footer />
       </body>
     </html>

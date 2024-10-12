@@ -4,7 +4,7 @@ import KopOchSalj from "./KopOchSalj";
 
 export default function Home() {
   return (
-    <main>
+    <>
       <Hero imageUrl="./blad.jpg" fullScreen={true}>
         <h1 className="mb-5 text-5xl font-bold">
           Välkommen till Holmängens Koloniförening!
@@ -26,6 +26,6 @@ export default function Home() {
         </p>
         <button className="btn btn-primary">Utforska bilder!</button>
       </Hero>
-    </main>
+    </>
   );
 }
