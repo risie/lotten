@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
-import Link from "next/link";
 import Footer from "./Footer";
+import Navbar from "./Navbar";
 
 const montserrat = Montserrat({ weight: "300", subsets: ["latin"] });
 
@@ -20,12 +20,8 @@ export default function RootLayout({
   return (
     <html data-theme="light" lang="en">
       <body className="flex flex-col min-h-screen">
-        <header>
-          <div className="navbar bg-base-100">
-            <Link href={"/"} className="btn btn-ghost text-lg text-wrap">
-              Holmängens Koloniförening
-            </Link>
-          </div>
+        <header className="sticky top-0 z-50">
+          <Navbar />
         </header>
         <main className="flex-grow">{children}</main>
         <Footer />
