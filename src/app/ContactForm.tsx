@@ -5,7 +5,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { contactSchema } from "../lib/schemas";
 import { useRouter } from "next/navigation";
-import Link from "next/link";
 
 type ContactFormInputs = z.infer<typeof contactSchema>;
 
@@ -61,12 +60,12 @@ export default function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form onSubmit={handleSubmit(onSubmit)} className="w-full">
       <label className="input flex items-center gap-2">Namn</label>
       <input
         {...register("name")}
         type="text"
-        className={`input w-full input-bordered max-w-xs ${errors.name ? "input-error" : ""}`}
+        className={`input w-full input-bordered  ${errors.name ? "input-error" : ""}`}
         placeholder="namn"
       />
       {errors.name && <p className="text-red-500">{errors.name.message}</p>}
@@ -75,7 +74,7 @@ export default function ContactForm() {
       <input
         {...register("email")}
         type="text"
-        className={`input w-full input-bordered max-w-xs ${errors.email ? "input-error" : ""}`}
+        className={`input w-full input-bordered ${errors.email ? "input-error" : ""}`}
         placeholder="exempel@mail.com"
       />
       {errors.email && <p className="text-red-500">{errors.email.message}</p>}
@@ -84,7 +83,7 @@ export default function ContactForm() {
       <input
         {...register("subject")}
         type="text"
-        className={`input input-bordered w-full max-w-xs ${errors.subject ? "input-error" : ""}`}
+        className={`input input-bordered w-full ${errors.subject ? "input-error" : ""}`}
         placeholder="Köpa kolonilott"
       />
       {errors.subject && (
@@ -95,7 +94,7 @@ export default function ContactForm() {
 
       <textarea
         {...register("message")}
-        className={`textarea textarea-bordered w-full max-w-xs ${errors.message ? "textarea-error" : ""}`}
+        className={`textarea textarea-bordered w-full ${errors.message ? "textarea-error" : ""}`}
         placeholder="Meddelande"
       />
       {errors.message && (

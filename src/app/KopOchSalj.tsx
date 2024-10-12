@@ -29,10 +29,14 @@ export default function KopOchSalj() {
         <p>
           Stugorna säljs exempelvis via mäklare eller annons, men ibland sätter
           säljaren upp en lapp på föreningens anslagstavla. Om du undrar över
-          något, skickar du ett mejl till styrelsen vi vårt
-          <Link href="/kontakt"> kontaktformulär</Link>. Vi återkopplar till dig
-          så snart som möjligt.
+          något, skickar du ett mejl till styrelsen vi vårt kontaktformulär . Vi
+          återkopplar till dig så snart som möjligt.
         </p>
+        <Link href={"kontakt"}>
+          <button type="button" className="btn my-2">
+            Kontakta oss
+          </button>
+        </Link>
       </article>
     </section>
   );
