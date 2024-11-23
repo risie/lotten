@@ -24,7 +24,7 @@ export default function Home() {
         <p className="mb-5">
           I vårt arkiv kan du se bilder på området från både nu och förr.
         </p>
-        <button className="btn btn-primary">Utforska bilder!</button>
+        <button className="btn my-2">Utforska bilder!</button>
       </Hero>
     </>
   );
