@@ -4,8 +4,8 @@ export default function Navbar() {
   return (
     <div className="navbar bg-base-100">
       <div className="navbar-start">
-        <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+        <div className="dropdown sm:hidden">
+          <div tabIndex={0} role="button" className="btn btn-ghost">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -26,7 +26,7 @@ export default function Navbar() {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
             <li>
-              <Link href={"/aktuellt"}>Aktuellt</Link>
+              <Link href={"/byggregler"}>Medlem</Link>
             </li>
             <li>
               <Link href={"/kontakt"}>Kontakt</Link>
@@ -40,10 +40,10 @@ export default function Navbar() {
           Holmängens koloniförening
         </Link>
       </div>
-      <div className="navbar-center hidden lg:flex">
+      <div className="navbar-center hidden sm:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <Link href={"/aktuellt"}>Aktuellt</Link>
+            <Link href={"/byggregler"}>Medlem</Link>
           </li>
 
           <li>
