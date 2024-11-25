@@ -20,35 +20,31 @@ export default function MembersLayout({
     path === currentPath ? "tab-active" : "";
   return (
     <>
-      <ul role="tablist" className="tabs tabs-bordered">
-        <Link
-          href={Paths.BYGGREGLER}
-          role="tab"
-          className={`tab ${isTabActive(Paths.BYGGREGLER, currentPath)}`}
-        >
-          Byggregler
-        </Link>
-        <Link
-          href={Paths.VERKSAMHETSPLAN}
-          role="tab"
+      <ul role="tablist" className="tabs-lg tabs-boxed">
+        <li className={`tab ${isTabActive(Paths.BYGGREGLER, currentPath)}`}>
+          <Link href={Paths.BYGGREGLER} role="tab">
+            Byggregler
+          </Link>
+        </li>
+        <li
           className={`tab ${isTabActive(Paths.VERKSAMHETSPLAN, currentPath)}`}
         >
-          Verskamhetsplan
-        </Link>
-        <Link
-          href={Paths.STADGAR}
-          role="tab"
-          className={`tab ${isTabActive(Paths.STADGAR, currentPath)}`}
-        >
-          Stadgar
-        </Link>
-        <Link
-          href={Paths.VATTEN_OCH_AVLOPP}
-          role="tab"
+          <Link href={Paths.VERKSAMHETSPLAN} role="tab">
+            Verskamhetsplan
+          </Link>
+        </li>
+        <li className={`tab ${isTabActive(Paths.STADGAR, currentPath)}`}>
+          <Link href={Paths.STADGAR} role="tab">
+            Stadgar
+          </Link>
+        </li>
+        <li
           className={`tab ${isTabActive(Paths.VATTEN_OCH_AVLOPP, currentPath)}`}
         >
-          Vatten och avlopp
-        </Link>
+          <Link href={Paths.VATTEN_OCH_AVLOPP} role="tab">
+            Vatten och avlopp
+          </Link>
+        </li>
       </ul>
       {children}
     </>
