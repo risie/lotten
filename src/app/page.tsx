@@ -1,6 +1,7 @@
 import Hero from "./Hero";
 import Welcome from "./Welcome";
 import KopOchSalj from "./KopOchSalj";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -24,7 +25,9 @@ export default function Home() {
         <p className="mb-5">
           I vårt arkiv kan du se bilder på området från både nu och förr.
         </p>
-        <button className="btn my-2">Utforska bilder!</button>
+        <Link href={"/bilder"}>
+          <button className="btn my-2">Utforska bilder!</button>
+        </Link>
       </Hero>
     </>
   );
