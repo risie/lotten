@@ -26,6 +26,9 @@ export default function Navbar() {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
             <li>
+              <Link href={"/"}>Hem</Link>
+            </li>
+            <li>
               <Link href={"/byggregler"}>Medlem</Link>
             </li>
             <li>
@@ -43,9 +46,11 @@ export default function Navbar() {
       <div className="navbar-center hidden sm:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
+            <Link href={"/"}>Hem</Link>
+          </li>
+          <li>
             <Link href={"/byggregler"}>Medlem</Link>
           </li>
-
           <li>
             <Link href={"/kontakt"}>Kontakt</Link>
           </li>
