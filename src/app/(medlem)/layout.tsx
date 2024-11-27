@@ -29,7 +29,7 @@ export default function MembersLayout({
           className={`tab ${isTabActive(Paths.VERKSAMHETSPLAN, currentPath)}`}
         >
           <Link href={Paths.VERKSAMHETSPLAN} role="tab">
-            Verskamhetsplan
+            Verksamhetsplan
           </Link>
         </li>
         <li
