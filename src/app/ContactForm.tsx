@@ -90,7 +90,7 @@ export default function ContactForm() {
         <p className="text-red-500">{errors.subject.message}</p>
       )}
 
-      <label className="input flex items-center gap-2">Meddeleande</label>
+      <label className="input flex items-center gap-2">Meddelande</label>
 
       <textarea
         {...register("message")}
