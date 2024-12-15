@@ -47,10 +47,10 @@ export default function ByggRegler() {
         </p>
         <strong> Ett bygglov kostar.</strong>
         <p>
-          Exempel: Avgiften för ett bygglov för en kolonistuga ligger på ca 3000
-          kronor. Det beror på vad du vill bygga. Ungefär halva avgiften måste
-          du betala även för ett negativt besked. Det vill säga om din ansökan
-          avslås. Är du osäker? Fråga kommunens bygglovsenhet på ”Miljö- och
+          På kommunens hemsida framgår gällande bygglovstaxa, som är olika
+          beroende på vad som ska byggas. Ungefär halva avgiften måste du betala
+          även för ett negativt besked. Det vill säga om din ansökan avslås. Är
+          du osäker? Fråga kommunens bygglovsenhet på ”Miljö- och
           byggnadsförvaltningen”! Du kan ringa: 0521 72 13 13 Du kan skicka
           e-post: byggnad@vanersborg.se Du kan besöka kommunhuset Södergatan 16A
           följande tider: måndag-torsdag kl 8.00-12.00 samt onsdagar kl
