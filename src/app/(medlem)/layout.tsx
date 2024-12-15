@@ -7,6 +7,7 @@ enum Paths {
   VATTEN_OCH_AVLOPP = "/vatten-och-avlopp",
   VERKSAMHETSPLAN = "/verksamhetsplan",
   ORDNINGSREGLER = "/ordningsregler",
+  STADGAR = "/stadgar",
 }
 
 export default function MembersLayout({
@@ -43,6 +44,11 @@ export default function MembersLayout({
         <li className={`tab ${isTabActive(Paths.ORDNINGSREGLER, currentPath)}`}>
           <Link href={Paths.ORDNINGSREGLER} role="tab">
             Ordningsregler
+          </Link>
+        </li>
+        <li className={`tab ${isTabActive(Paths.STADGAR, currentPath)}`}>
+          <Link href={Paths.STADGAR} role="tab">
+            Stadgar
           </Link>
         </li>
       </ul>
