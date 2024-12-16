@@ -6,17 +6,10 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  theme: {
-    extend: {
-      colors: {
-        "complementary-color": "#7da2a9",
-        "main-bg-color": "#f7f7f7",
-      },
-    },
-  },
+  theme: {},
   plugins: [require("@tailwindcss/typography"), require("daisyui")],
   daisyui: {
-    themes: ["cmyk"],
+    themes: ["winter"],
   },
 };
 export default config;
