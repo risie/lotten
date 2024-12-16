@@ -19,7 +19,7 @@ export default function ContactForm() {
     register,
     handleSubmit,
     setError,
-    formState: { errors },
+    formState: { errors, isSubmitting },
   } = useForm<ContactFormInputs>({
     resolver: zodResolver(contactSchema),
   });
@@ -101,7 +101,7 @@ export default function ContactForm() {
         <p className="text-red-500">{errors.message.message}</p>
       )}
       <div className="flex flex-col">
-        <button type="submit" className="btn my-2">
+        <button type="submit" className="btn my-2" disabled={isSubmitting}>
           Skicka meddelande
         </button>
         <button
