@@ -3,9 +3,9 @@ import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 import { contactSchema } from "../../../lib/schemas";
 
-const appEmailClient = process.env.VITE_EMAIL_SENDING_CLIENT;
-const appEmailClientPassword = process.env.VITE_EMAIL_SENDING_CLIENT_PASSWORD;
-const adminEmail = process.env.VITE_EMAIL_RECIEVING_ORGANISATION;
+const appEmailClient = process.env.EMAIL_SENDING_CLIENT;
+const appEmailClientPassword = process.env.EMAIL_SENDING_CLIENT_PASSWORD;
+const adminEmail = process.env.EMAIL_RECIEVING_ORGANISATION;
 
 export async function POST(req: NextRequest) {
   const formData = await req.json();
