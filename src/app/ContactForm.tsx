@@ -27,6 +27,11 @@ export default function ContactForm() {
   const router = useRouter();
 
   const onSubmit = async (data: ContactFormInputs) => {
+    // Check honeypot field
+    if (data.honeypot) {
+      console.warn("Bot detected!");
+      return;
+    }
     try {
       const response = await fetch("/api/kontakt", {
         method: "POST",
@@ -100,6 +105,15 @@ export default function ContactForm() {
       {errors.message && (
         <p className="text-red-500">{errors.message.message}</p>
       )}
+
+      {/* Honeypot field */}
+      <div style={{ display: "none" }}>
+        <label>
+          Do not fill this out:
+          <input type="text" {...register("honeypot")} />
+        </label>
+      </div>
+
       <div className="flex flex-col">
         <button disabled={isSubmitting} type="submit" className="btn my-2">
           Skicka meddelande

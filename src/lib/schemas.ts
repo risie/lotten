@@ -6,4 +6,5 @@ export const contactSchema = z.object({
   email: emailSchema,
   subject: z.string().nonempty("Ange ett ämne"),
   message: z.string().nonempty("Skriv ett meddelande"),
+  honeypot: z.string().optional(),
 });
