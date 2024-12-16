@@ -101,7 +101,7 @@ export default function ContactForm() {
         <p className="text-red-500">{errors.message.message}</p>
       )}
       <div className="flex flex-col">
-        <button type="submit" className="btn my-2" disabled={isSubmitting}>
+        <button disabled={isSubmitting} type="submit" className="btn my-2">
           Skicka meddelande
         </button>
         <button
