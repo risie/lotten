@@ -19,12 +19,6 @@ export async function POST(req: NextRequest) {
     );
   }
   const { name, email, subject, message } = validation.data;
-  // Prevent sending email in development
-  console.log("sent email from server", validation.data);
-  return NextResponse.json(
-    { message: "Email sent successfully" },
-    { status: 200 },
-  );
 
   // Create a transporter object using SMTP transport
   const transporter = nodemailer.createTransport({
